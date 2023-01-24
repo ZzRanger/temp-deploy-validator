@@ -27,7 +27,7 @@ DEGREE_PLANS = [
 # Load all degree plans
 solvers = defaultdict(GraduationRequirementsSolver)
 for degree_plan in set(DEGREE_PLANS):
-    filename = f'../requirements/{degree_plan}.req'
+    filename = f'requirements/{degree_plan}.req'
     solvers[degree_plan].load_requirements_from_file(filename)
 
 
