@@ -5,7 +5,7 @@
     "buildCommand": "pip3 install -r requirements.txt"
   },
   "deploy": {
-    "startCommand": "gunicorn -w 4 -b 0.0.0.0:5001 api:app",
+    "startCommand": "gunicorn -w 4 -b 0.0.0.0:$PORT api:app",
     "healthcheckPath": "/",
     "healthcheckTimeout": 100,
     "restartPolicyType": "never"
