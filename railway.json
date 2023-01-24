@@ -5,7 +5,7 @@
     "buildCommand": "pip3 install -r requirements.txt"
   },
   "deploy": {
-    "startCommand": "flask --app api/api run",
+    "startCommand": "flask --app api run",
     "healthcheckPath": "/",
     "healthcheckTimeout": 100,
     "restartPolicyType": "never"
